@@ -1,0 +1,16 @@
+<div class="card">
+    There are three simple components from two component libraries on the card
+
+    <lib-badge
+        class="component"
+        fallbackValue="Angular components are not bad"
+        [color]="badgeColor"
+        [value]="message"
+    ></lib-badge>
+
+    <lib-input class="component" placeholder="badge text" [(value)]="message"></lib-input>
+
+    <lib-button class="component" (click)="onButtonClick()">
+        toggle badge color
+    </lib-button>
+</div>
