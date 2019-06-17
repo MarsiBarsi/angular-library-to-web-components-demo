@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Angular Library in web components demo</title>
+        <link href="./style.css" rel="stylesheet" />
+        <link href="./main-theme.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <script src="zone.min.js"></script>
+
+        <div class="card">
+            There are three simple components from two component libraries on the card
+
+            <my-badge id="badge" class="component"></my-badge>
+
+            <my-input id="input" class="component" placeholder="badge text"></my-input>
+
+            <my-button id="button" class="component" onclick="onButtonClick()">
+                toggle badge color
+            </my-button>
+        </div>
+
+        <script src="my-badge.js"></script>
+        <script src="my-input.js"></script>
+        <script src="my-button.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
